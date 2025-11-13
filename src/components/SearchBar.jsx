@@ -20,7 +20,6 @@ export default function SearchBar({ onSearch }) {
       onSubmit={handleSubmit}
       className="flex mb-12 w-full max-w-3xl items-center"
     >
-      {/* OUTER WRAPPER — border appears only when input is focused */}
       <div
         className="
           w-full
@@ -32,7 +31,6 @@ export default function SearchBar({ onSearch }) {
           transition-all duration-150
         "
       >
-        {/* INNER INPUT */}
         <input
           type="text"
           placeholder="Search emojis..."
@@ -50,10 +48,8 @@ export default function SearchBar({ onSearch }) {
         />
       </div>
 
-      {/* gap */}
       <div className="w-4" />
 
-      {/* SEARCH BUTTON */}
       <button
         type="submit"
         disabled={isLoading}
